@@ -1,0 +1,583 @@
+body {
+    font-family: "poppins", sans-serif;
+}
+
+
+/* --------stat nav------------ */
+.nav-link {
+    position: relative;
+}
+
+.nav-link.active::after {
+    content: "";
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 6px;
+    width: 70%;
+    height: 2px;
+}
+
+/* --------end nav------------ */
+/* --------stat home------------ */
+header {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.594), rgba(0, 0, 0, 0.594)), url(../imgs/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#home h2 {
+
+    font-family: "Montserrat", sans-serif;
+}
+
+#home h4::after {
+    content: "";
+    animation: infinite 5s text;
+    font-weight: 500;
+}
+
+#home h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+}
+
+#home .icons a {
+    background-color: aqua;
+}
+
+ul {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.icon-bg {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 40px;
+    height: 40px;
+
+}
+
+/*--- -------end home----------- */
+/* <!-- -------start about---------- --> */
+.about-image {
+    position: relative;
+    width: 80%;
+}
+
+.about-image::after {
+    content: "";
+    background-image: radial-gradient(#e5e5e5 20%, transparent 20%);
+    background-position: center;
+    background-size: 10px 10px;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: -30px;
+    bottom: -30px;
+    z-index: -10;
+
+}
+
+#about button {
+    border-color: transparent;
+}
+
+#about h2 {
+    font-family: "Montserrat", sans-serif;
+}
+
+#about h6 {
+    color: #999999;
+    font-family: "Poppins", sans-serif;
+}
+
+#about p {
+    color: #748182;
+    font-family: "Poppins", sans-serif;
+}
+
+.first-button {
+    background-color: black;
+    color: white;
+    transition: all 0.5s;
+}
+
+.second-button {
+    background-color: white;
+    color: black;
+    transition: all 0.5s;
+}
+
+.first-button:hover {
+    background-color: white;
+    color: black;
+    border: solid black;
+}
+
+.second-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.progress {
+    width: 100%;
+    padding: 15px 10px;
+    position: relative;
+}
+
+.progress-bar {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+
+}
+
+/* <!-- -------end about-------- --> */
+/* <!-- -------------------start services------------- --> */
+#services {
+    background-color: #F8F8F8;
+}
+
+#services h2 {
+    font-family: "Montserrat", sans-serif;
+}
+
+#services h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#services p {
+    font-family: "Poppins", sans-serif;
+    color: #748182;
+}
+
+.i-border {
+    background-color: #f4f4f4;
+    width: 80px;
+    height: 80px;
+    padding: 30px;
+    transition: all 0.5s;
+}
+
+.service-box:hover .i-border {
+    background-color: black;
+    width: 80px;
+    height: 80px;
+    padding: 30px;
+
+}
+
+.service-box i {
+    transition: all 0.5s;
+}
+
+.service-box:hover i {
+    color: white;
+}
+
+.tittle-service h2 {
+    position: relative;
+    z-index: 4;
+
+}
+
+.tittle-service h2::after {
+    content: "";
+    background-image: radial-gradient(#e5e5e5 20%, transparent 20%);
+    background-position: center;
+    background-size: 10px 10px;
+    width: 10%;
+    height: 30px;
+    position: absolute;
+    left: 850px;
+    bottom: -10px;
+    z-index: -10;
+}
+
+/* <!-- ------------------end services------------------------ --> */
+
+/* <!-- -------------------start portofolio------------- --> */
+
+#portfolio .active {
+    position: relative;
+}
+
+#portfolio .active::after {
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+    width: 40%;
+    height: 2px;
+}
+
+.portfolio-word h2{
+    position: relative;
+
+}
+
+.portfolio-word h2::after {
+    content: "";
+    background-image: radial-gradient(#e5e5e5 20%, transparent 20%);
+    background-position: center;
+    background-size: 10px 10px;
+    position: absolute;
+    left: 870px;
+    bottom: -10px;
+    width: 8%;
+    height: 30px;
+    z-index: -10;
+}
+
+.item {
+    position: relative;
+}
+
+.layer {
+    background-color: rgba(255, 255, 255, 0.905);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: 5px solid rgb(203, 203, 203);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.layer-icon {
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #111111;
+    transition: all 0.5s;
+}
+
+.layer-icon i {
+    font-size: 15px !important;
+    transition: all 0.5s;
+
+}
+
+.layer-icon:hover {
+    background-color: white !important;
+}
+
+.layer-icon i:hover {
+    color: #111111 !important;
+}
+
+
+.layer:hover {
+    opacity: 1;
+}
+
+/* -------------------------end portfolio-------------- */
+/* ----------start testimonial------------ */
+#Testimonials {
+    background-color: #F8F8F8;
+}
+
+.slider-img {
+    width: 90px !important;
+    height: 90px !important;
+
+
+}
+
+.carousel-inner {
+    margin: auto;
+}
+
+.carousel-inner p {
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+    word-spacing: 2px;
+}
+
+.carousel-item h6 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 30px 0 5px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.carousel-item span {
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 50px;
+}
+
+.circle {
+    width: 10px !important;
+    height: 10px !important;
+    margin-bottom: 5px !important;
+
+
+}
+
+.carousel-indicators .circle.active {
+    background-color: #869791;
+}
+
+.circle:hover {
+    background-color: #869791;
+}
+
+.carousel-indicators {
+    margin-top: 50px !important;
+}
+
+.circle::after,
+.circle::before {
+    height: 0px !important;
+}
+
+.carousel-item::after,
+.carousel-item::before {
+    height: 0px !important;
+}
+
+/* ----------end testimonial------------ */
+
+#counter p {
+    color: #748182;
+    font-family: "Poppins", sans-serif;
+}
+
+#counter h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+/* ----------start team------------ */
+
+#our-team {
+    background-color: #F7F7F7;
+}
+
+.layer-team {
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    text-align: center;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    opacity: 0;
+    transition: all 0.5s;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+
+}
+
+.image-area:hover .layer-team {
+    opacity: 1;
+    transform: rotateY(0deg) scale(1, 1);
+}
+
+.image-area img {
+    transition: all .5s;
+}
+
+.image-area:hover img {
+    scale: 1.2;
+}
+
+.our-icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+.our-icon:hover {
+    background-color: #ffffff;
+
+
+}
+
+.our-icon:hover i {
+    color: #000000 !important;
+}
+
+.inner-our {
+    background-color: rgba(52, 52, 52, .8);
+    margin-bottom: 10px;
+}
+
+.img-text {
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+.img-text h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+}
+
+.img-text h5 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* ----------end team------------ */
+/* ----------start contact------------ */
+#contact h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#contact p {
+    font-family: "Poppins", sans-serif;
+    color: #748182;
+}
+
+.contact-icon {
+    background-color: #f4f4f4;
+    width: 50px;
+    height: 50px;
+    transition: all 0.5s;
+}
+
+.inner-contact i {
+    transition: all 0.5s;
+}
+
+.inner-contact:hover i {
+    color: white;
+
+}
+
+.inner-contact:hover .contact-icon {
+    background-color: #1c1c1c;
+
+}
+
+.form-control {
+    background-color: #f4f4f4;
+}
+
+/* ----------end contact------------ */
+/* ----------start footer------------ */
+footer {
+    background-color: #1c1c1c;
+}
+
+#footer p {
+    color: #748182;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ----------end footer------------ */
+
+
+
+
+
+
+
+@keyframes text {
+    0% {
+        content: "|";
+    }
+
+    5% {
+        content: "Ra|";
+    }
+
+    10% {
+        content: "Rahe|";
+    }
+
+    15% {
+        content: "Raheem|";
+    }
+
+    20% {
+        content: "Rahe|";
+    }
+
+    25% {
+        content: "Ra|";
+    }
+
+    30% {
+        content: "|";
+    }
+
+    35% {
+        content: "De|";
+    }
+
+    40% {
+        content: "Deve|";
+    }
+
+    45% {
+        content: "Develop|";
+    }
+
+    50% {
+        content: "Developer|";
+    }
+
+    55% {
+        content: "Develop|";
+    }
+
+    60% {
+        content: "Deve|";
+    }
+
+    65% {
+        content: "De|";
+    }
+
+    70% {
+        content: "|";
+    }
+
+    75% {
+        content: "Des|";
+    }
+
+    80% {
+        content: "Design|";
+    }
+
+    85% {
+        content: "Designer|";
+    }
+
+    90% {
+        content: "Design|";
+    }
+
+    95% {
+        content: "Des|";
+    }
+
+    100% {
+        content: "|";
+    }
+}
